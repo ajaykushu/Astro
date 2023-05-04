@@ -1,0 +1,52 @@
+<div class="login-container">
+    <span class="heading">Welcome Back</span>
+    <form class="login" #form>
+      <div class="input-text">
+        <div class="row">
+          <input placeholder="Email/Mobile Number" name="email" class="inp-text" type="text" minlength="" [(ngModel)]="loginObj.userName" required #email="ngModel" />
+          <div *ngIf="email.invalid && (email.dirty || email.touched)"
+               class="feedback">
+
+            <div class="invalid-feedback" *ngIf="email.errors?.['required']">
+              Name is required.
+            </div>
+            <div class="invalid-feedback" *ngIf="email.errors?.['minlength']">
+              Name must be at least 4 characters long.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <input placeholder="Password" name="password" class="inp-text " type="password" [(ngModel)]="loginObj.password" required #pass="ngModel" />
+          <div *ngIf="pass.invalid && (pass.dirty || pass.touched)"
+               class="feedback">
+
+            <div class="invalid-feedback" *ngIf="pass.errors?.['required']">
+              Password is required.
+            </div>
+            <div class="invalid-feedback" *ngIf="pass.errors?.['minlength']">
+              Password must be at least 8 characters long.
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="row">
+          <button type="submit" [disabled]="email.value=='' || pass.value==''" (click)="loginValidate()" class="btn login-button">Sign In</button>
+        </div>
+        <br />
+
+        <div class="d-inline-flex justify-content-center" >
+          <a href="#" class="link">Create Account</a>
+        </div>
+        <div class="d-inline-flex justify-content-center">
+          <a role="button" (click)="Authenticate()"  class="link" data-toggle="tooltip" data-placement="bottom" title="Google Login">
+            <img src="../../assets/5847f9cbcef1014c0b5e48c8.png" width="35"/>
+          </a>
+        </div>
+      </div>
+   
+  </form>
+</div>
+
+

@@ -1,0 +1,14 @@
+{
+  "BasePath": "https://localhost:7217/api",
+  "Modules": [
+    {
+      "Name": "Authentication",
+      "Endpoints": [
+        {
+          "name": "getAccessToken",
+          "path": "/getAccessToken"
+        }
+      ]
+    }
+  ]
+}

@@ -24,7 +24,6 @@ Bin/
 obj/
 Obj/
 
-ClientApp/
 .angular/
 
 # Visual Studio 2015 cache/options directory

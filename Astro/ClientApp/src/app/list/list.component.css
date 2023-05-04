@@ -1,0 +1,40 @@
+td {
+  padding: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #5cb85c;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: white;
+  position: relative;
+}
+  th:last-child {
+    border: 0;
+  }
+.resize-handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0;
+  width: 3px;
+  cursor: col-resize;
+}
+  .resize-handle:hover,
+  .header--being-resized .resize-handle {
+    opacity: 0.8;
+  }
+th:hover .resize-handle {
+  opacity: 0.3;
+}

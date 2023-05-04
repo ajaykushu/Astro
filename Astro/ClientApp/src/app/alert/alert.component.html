@@ -1,0 +1,29 @@
+<div  [ngClass]="containerclass" [hidden]="hidden">
+  <div class="card ">
+    <div class="card-body ">
+      <div class="group">
+        <div [class]="color"><i-bs width="1.5rem" 
+     height="1.5rem" [name]="icon"  [class]="color"></i-bs></div>
+        <div class="col wrap">
+          <h5 class="card-title row">{{title}}</h5>
+          <p class="row">{{description}}</p>
+        </div>
+        <div>
+          <a role="button" class="card-title row" (click)=" close()">
+            <i-bs [name]="enum.XLg" width="1.5rem"
+                  height="1.5rem"></i-bs>
+          </a>
+          <div class="row counter" [hidden]="!showTimer">{{counter}}</div>
+        </div>
+      </div>
+      <ng-content>
+       
+      </ng-content>
+    </div>
+
+  </div>
+  
+</div>
+
+
+

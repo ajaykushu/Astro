@@ -1,0 +1,132 @@
+
+.heading {
+  color: var(--yellow);
+  font-size: 1.8em;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  width: 100%;
+  display: inline-table;
+  margin-top: 10%;
+}
+
+@media only screen and (max-width:600px) {
+  .login-container {
+    width: 400px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width:600px) {
+  .login-container {
+    width: 500px;
+  }
+}
+
+.login-container {
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  top: 50%;
+  position: relative;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+ 
+}
+
+  .login-container:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    transition:box-shadow linear 0.3s;
+  }
+
+  .login {
+    padding: 20%;
+  }
+
+.input-text {
+  display: flex;
+  flex-direction: column;
+  /* gap: revert; */
+  row-gap: 22px;
+}
+
+.inp-text {
+  table-layout: fixed;
+  background-color: black;
+  color: white;
+  font-size: 1.4em;
+  padding-left: 6px;
+  width: -webkit-fill-available;
+  border: 0;
+  border-bottom: 2px solid white;
+  border-radius: 4px;
+}
+
+.inp-label {
+  font-family: var(--GeneralFont);
+}
+
+.inp-text:focus {
+  border:0;
+  outline:2px solid white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+.submit {
+}
+.login-button:active {
+  background-color: rgba(255, 216, 0,0.7);
+}
+
+
+
+.login-button {
+  width: -webkit-fill-available;
+  background-color: var(--yellow);
+  color: saddlebrown;
+  font-family: --GeneralFont;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.4em;
+}
+
+.account-create {
+  width: 100%;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  font-family: --GeneralFont;
+  color: var(--yellow);
+  cursor: pointer;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+  .link:active {
+    opacity: 0.8;
+  }
+
+.invalid-feedback {
+  display: contents;
+  font-weight: 400;
+}
+.feedback{
+    padding:0;
+}

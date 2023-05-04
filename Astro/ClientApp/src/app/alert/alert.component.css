@@ -1,0 +1,172 @@
+.counter {
+  text-align: center;
+  display: block;
+  color: royalblue;
+  font-family: CustomFont;
+}
+
+@media only screen and (max-width: 400px) {
+  .alert-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 401px) {
+  .alert-container {
+    width: 380px;
+  }
+}
+
+a {
+  color: grey;
+  font-weight: bolder;
+  align-self: auto;
+}
+
+.close {
+  -webkit-animation-name: modalClose;
+  -webkit-animation-duration: 0.3s;
+  opacity: 1;
+  animation-name: modalClose;
+  animation-duration: 0.3s;
+}
+
+@keyframes modalClose {
+  0% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  20% {
+    opacity: 0.8;
+  }
+
+  30% {
+    opacity: 0.7;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.4;
+  }
+
+  70% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 0.2;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+@font-face {
+  font-family: "CustomFont";
+  src: url('../../assets/CoreSansA55Medium.otf');
+}
+
+.alert-container {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  
+}
+
+.alert-container:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+  transition: box-shadow linear 0.3s;
+}
+
+.card-title {
+  font-family: CustomFont;
+}
+
+p {
+  font-family: CustomFont;
+  color: gray;
+}
+
+.group {
+  display: flex;
+  flex-flow: row;
+  gap: 30px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.topleft {
+  top: 0;
+  left: 0;
+  margin: 4%;
+}
+
+.topright {
+  top: 0;
+  right: 0;
+  margin: 4%;
+}
+
+.bottomleft {
+  bottom: 0;
+  left: 0;
+  margin: 4%;
+}
+
+.bottomright {
+  bottom: 0;
+  right: 0;
+  margin: 4%;
+}
+
+.centre {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.wrap {
+  word-break: break-word;
+  text-overflow:ellipsis;
+
+
+}
